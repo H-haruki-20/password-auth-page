@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="POST" name="form1">
+        <b>ユーザネーム</b>:
+                        <div style="margin-top:5px;">
+        <input istyle="3" maxlength="32" name="username" size="15" style="width:115px" type="text" value=""/>
+        </div>
+        <br/>
+        <b>パスワード</b>:
+                        <div style="margin-top:5px;">
+        <input class="bsite_pass" istyle="3" maxlength="30" name="password" size="15" type="password" value=""/>
+        </div>
+        <br/>
+        <div style="margin-top:5px;">
+        <a href="/bsite/info/policyList.do?list=attention">お取引注意事項</a>に同意の上、ログインして下さい
+                        </div>
+        <br/>
+        <div align="center">
+        <input name="login" type="submit" value=" ログイン "/>
+                        <input name="cancel" onclick="dataclear()" type="button" value="キャンセル"/>
+        </div>
+        <br/>
+        </form>
+</body>
+</html>
