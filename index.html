@@ -9,7 +9,8 @@
 
 <header>
     <center>
-        <h1>JavaScriptとHTMLで簡単なログインフォームを作る</h1>
+        <h1>パスワードを当ててみろ！</h1>
+        <h2>鉄壁のWebサイト</h2>
     </center>
 </header>
 <style>
@@ -48,6 +49,7 @@
 
             </div>
             <button type="button" onClick="nextPage();">認証</button>
+            <div id="error"></div>
         </form>
 
         <!--ログイン処理-->
@@ -55,7 +57,12 @@
             function nextPage() {
                 id = document.login_form.id.value
                 pwd = document.login_form.pass.value;
-                location.href = id + pwd + ".html";
+                if(id == "admin"){
+                    if(pwd == "4019"){
+                        location.href = "success.html";
+                    }
+                }
+                
             }
         </script>
 
