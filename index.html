@@ -49,7 +49,7 @@
 
             </div>
             <button type="button" onClick="nextPage();">認証</button>
-            <div id="error"></div>
+            <h3 id="error"></div>
         </form>
 
         <!--ログイン処理-->
@@ -62,8 +62,8 @@
                         location.href = "success.html";
                     }
                 }
-                err = document.getElementById("error");
-                err.value = "Incorrect password"
+                var err = document.getElementById("error");
+                err.innerHTML = "Incorrect password"
             }
         </script>
 
